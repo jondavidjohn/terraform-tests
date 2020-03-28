@@ -3,13 +3,13 @@ policy "must-have-three-words" {
 }
 
 policy "workspace-must-be-dev" {
-  enforcement_level = "hard-mandatory"
+  enforcement_level = "soft-mandatory"
 }
 
 policy "must-be-free" {
-  enforcement_level = "hard-mandatory"
+  enforcement_level = "soft-mandatory"
 }
 
 policy "no-hazardous-asteroids-today" {
-  enforcement_level = "hard-mandatory"
+  enforcement_level = "soft-mandatory"
 }
