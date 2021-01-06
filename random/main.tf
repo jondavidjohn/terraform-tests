@@ -1,13 +1,13 @@
-resource "random_pet_one" "animal" {
+resource "random_pet" "animal_one" {
   keepers = {
-    uuid = "${uuid()}" # Force a new name each time
+    uuid = "firstpet" # Force a new name each time
   }
   length = 3
 }
 
-resource "random_pet_two" "animal" {
+resource "random_pet" "animal_two" {
   keepers = {
-    uuid = "${uuid()}" # Force a new name each time
+    uuid = "secondpet" # Force a new name each time
   }
   length = 2
 }
