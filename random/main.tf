@@ -13,9 +13,9 @@ resource "random_pet" "animal_two" {
 }
 
 output "random_one" {
-  value = "${random_pet_one.animal_one.id}"
+  value = "${random_pet.animal_one.id}"
 }
 
 output "random_two" {
-  value = "${random_pet_two.animal_two.id}"
+  value = "${random_pet.animal_two.id}"
 }
