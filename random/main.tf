@@ -5,13 +5,6 @@ resource "random_pet" "animal_one" {
   length = 3
 }
 
-resource "random_pet" "animal_two" {
-  keepers = {
-    uuid = "secondpet" # Force a new name each time
-  }
-  length = 2
-}
-
 resource "random_pet" "animal_three" {
   keepers = {
     uuid = "thirdpet" # Force a new name each time
@@ -21,10 +14,6 @@ resource "random_pet" "animal_three" {
 
 output "random_one" {
   value = "${random_pet.animal_one.id}"
-}
-
-output "random_two" {
-  value = "${random_pet.animal_two.id}"
 }
 
 output "random_three" {
