@@ -9,7 +9,7 @@ resource "random_pet" "animal_two" {
   keepers = {
     uuid = "secondpet" # Force a new name each time
   }
-  length = 7
+  length = 4
 }
 
 resource "random_pet" "animal_three" {
