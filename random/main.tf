@@ -1,27 +1,27 @@
 resource "random_pet" "animal_one" {
   keepers = {
-    uuid = "firstpet" # Force a new name each time
+    uuid = "${uuid()}" # Force a new name each time
   }
   length = 3
 }
 
 resource "random_pet" "animal_two" {
   keepers = {
-    uuid = "secondpet" # Force a new name each time
+    uuid = "${uuid()}" # Force a new name each time
   }
   length = 4
 }
 
 resource "random_pet" "animal_three" {
   keepers = {
-    uuid = "thirdpet" # Force a new name each time
+    uuid = "${uuid()}" # Force a new name each time
   }
   length = 3
 }
 
 resource "random_pet" "animal_four" {
   keepers = {
-    uuid = "fourpet" # Force a new name each time
+    uuid = "${uuid()}" # Force a new name each time
   }
   length = 3
 }
