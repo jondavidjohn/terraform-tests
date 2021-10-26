@@ -11,7 +11,11 @@ variable "var_four" {
   default = "default_var_four"
 }
 
-resource "null_resource" "print_envvars_1" {
+resource "null_resource" "print_envvars" {
+  triggers {
+    uuid = "${uuid()}" # Force to run each time
+  }
+
   provisioner "local-exec" {
     command = "env"
   }
