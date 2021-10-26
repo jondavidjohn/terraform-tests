@@ -12,7 +12,7 @@ variable "var_four" {
 }
 
 resource "null_resource" "print_envvars" {
-  triggers {
+  triggers = {
     uuid = "${uuid()}" # Force to run each time
   }
 
