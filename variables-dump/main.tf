@@ -11,7 +11,7 @@ variable "var_four" {
   default = "default_var_four"
 }
 
-resource "null_resource" "print_envvars" {
+resource "null_resource" "print_envvars_1" {
   provisioner "local-exec" {
     command = "env"
   }
