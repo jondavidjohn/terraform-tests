@@ -23,3 +23,7 @@ output var_two {
 output var_three {
   value = var.var_one
 }
+
+output env_vars {
+  value = external.envvars
+}
