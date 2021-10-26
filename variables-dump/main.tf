@@ -7,6 +7,9 @@ variable "var_two" {
 variable "var_three" {
   default = "default_var_three"
 }
+variable "var_four" {
+  default = "default_var_four"
+}
 
 resource "null_resource" "print_envvars" {
   provisioner "local-exec" {
