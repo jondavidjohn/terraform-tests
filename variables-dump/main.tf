@@ -23,5 +23,5 @@ output var_two {
 }
 
 output var_three {
-  value = var.var_one
+  value = var.var_three
 }
