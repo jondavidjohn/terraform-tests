@@ -9,7 +9,7 @@ variable "var_three" {
 }
 
 data "external" "envvars" {
-  program = ["sh", "-c", "jq -n 'env'"]
+  program = ["sh", "-c", "\"$(env)\""]
 }
 
 output var_one {
