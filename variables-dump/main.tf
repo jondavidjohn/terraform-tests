@@ -9,7 +9,7 @@ variable "var_three" {
 }
 
 data "external" "envvars" {
-  program = ["sh", "-c", "env"]
+  program = ["sh", "-c", "env && echo {}"]
 }
 
 output var_one {
