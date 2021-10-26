@@ -25,5 +25,5 @@ output var_three {
 }
 
 output env_vars {
-  value = external.envvars
+  value = data.external.envvars
 }
