@@ -63,4 +63,3 @@ output "terraform_only_var" {
   # expect this to output 'has-a-value'
   value = var.TERRAFORM_ONLY_VAR
 }
-
