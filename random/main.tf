@@ -37,3 +37,7 @@ output "random_two" {
 output "random_three" {
   value = "${random_pet.animal_three.id}"
 }
+
+output "random_four" {
+  value = "${random_pet.animal_four.id}"
+}
